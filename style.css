@@ -1,0 +1,236 @@
+/* Universal Style  */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+html{
+    font-size: 75.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: 2px solid #16A085;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 1px gray;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #16A085;
+}
+
+
+.btn span{
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    background: #16A085;
+    color: #fff;
+    margin-left: .5rem;
+}
+
+.btn:hover{
+    background: #16A085;
+    color: #fff;
+}
+
+.btn:hover span{
+    color: #16A085;
+    background: #fff;
+    margin-left: 1rem;
+}
+
+/* Header Section Style  */
+
+header{
+    padding: 1.5rem 9%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+header .logo{
+
+    font-size: 2rem;
+}
+
+header .logo  span{
+    color:rgb(91, 95, 95);
+}
+
+header .logo i{
+    color:#16A085 ;
+    font-size: 2.5rem;
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    color:rgb(91, 95, 95);
+    margin-left: 1.7rem;
+}
+
+header .navbar a:hover{
+    color: #16A085;
+}
+
+#menu-btn{
+    font-size: 2rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: #16A085;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Main Section Style Start  */
+
+/* Banner Section  */
+
+.banner-section{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top:10rem;
+}
+
+.banner-section .banner-img{
+    flex: 1 1 45rem;
+}
+
+.banner-section .banner-img img{
+    width: 100%;
+}
+
+.banner-section .banner-text{
+    flex: 1 1 45rem;
+}
+
+.banner-section .banner-text h1{
+    font-size: 3rem;
+    color: #575151;
+    line-height: 1.8;
+    text-shadow: .3rem .2rem 0 rgba(0, 0, 0, .2);
+}
+
+.banner-section .banner-text p{
+    font-size: 1.2rem;
+    color: #252323;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+
+/* Facilities Section  */
+
+.facilities{
+    display: flex;
+    
+}
+
+.facilities .data{
+    text-align: center;
+    border: 2px solid #16A085;
+    margin-right: 20px;
+    margin: auto;
+    padding: 3.1rem 5rem;
+    border-radius: 4px;
+    box-shadow: .3rem .3rem 0 rgba(22, 160, 133, .2);;
+}
+
+.facilities .data i{
+    font-size: 4rem;
+    color: #16A085;
+}
+.facilities .data h1{
+    font-size: 3rem;
+    font-size: 3rem;
+    color: #575151;
+    line-height: 1.8;
+    text-shadow: .3rem .2rem 0 rgba(0, 0, 0, .2);
+}
+
+.facilities .data p{
+    font-size: 1.3rem;
+    color: #575151;
+}
+
+
+
+
+/* Media Queries  */
+
+@media (max-width:550px){
+    html{
+        font-size: 50%;
+    }
+
+    #menu-btn{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 115%;
+        right: 2rem;
+        border-radius: .5rem;
+        box-shadow: gray;
+        width: 30rem;
+        background-color: #fff;
+        border: 2px solid #16A085;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+
+    header .navbar.active{
+        transform: scale(1);
+        opacity: 1;
+       transition: 0.2s ease-in-out; 
+    }
+
+    
+
+    header .navbar a{
+        font-size: 2rem;
+        display: block;
+        margin: 2.5rem;
+        
+    }
+    .banner-section{
+        display: block;
+    }
+
+    .facilities{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap:2rem;
+        
+    }
+
+    
+    
+}
