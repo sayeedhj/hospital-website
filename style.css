@@ -146,6 +146,7 @@ header .navbar a:hover{
 
 .facilities{
     display: flex;
+    margin-bottom: 6rem;
     
 }
 
@@ -208,6 +209,7 @@ header .navbar a:hover{
 .services{
     display: grid;
     grid-template-columns: auto auto auto;
+    margin-bottom: 3rem;
 }
 
 
