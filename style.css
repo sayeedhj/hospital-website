@@ -11,7 +11,7 @@
 }
 
 html{
-    font-size: 75.5%;
+    font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
@@ -71,8 +71,7 @@ header{
 }
 
 header .logo{
-
-    font-size: 2rem;
+    font-size: 2.8rem;
 }
 
 header .logo  span{
@@ -85,7 +84,7 @@ header .logo i{
 }
 
 header .navbar a{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color:rgb(91, 95, 95);
     margin-left: 1.7rem;
 }
@@ -136,7 +135,7 @@ header .navbar a:hover{
 }
 
 .banner-section .banner-text p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #252323;
     line-height: 1.8;
     padding: 1rem 0;
@@ -165,17 +164,117 @@ header .navbar a:hover{
     color: #16A085;
 }
 .facilities .data h1{
-    font-size: 3rem;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #575151;
     line-height: 1.8;
     text-shadow: .3rem .2rem 0 rgba(0, 0, 0, .2);
 }
 
 .facilities .data p{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #575151;
 }
+
+
+/* Services Section  */
+
+.services .service{
+    text-align: left;
+    border: 2px solid #16A085;
+    padding: 2.2rem ;
+    border-radius: 4px;
+    box-shadow: .3rem .3rem 0 rgba(22, 160, 133, .2);
+    margin: 20px;
+}
+
+
+.services .service p{
+    font-size: 1.5rem;
+    color: #575151;
+}
+
+.services .service i{
+    font-size: 4rem;
+    color: #16A085;
+}
+
+.services .service h1{
+    font-size: 2.9rem;
+    color: #575151;
+    line-height: 1.8;
+    text-shadow: .3rem .2rem 0 rgba(0, 0, 0, .2);
+}
+
+.services{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+.service-header{
+    text-align: center;
+    font-size: 5.2rem;
+    text-shadow: .3rem .2rem 0 rgba(0, 0, 0, .2);
+    font-weight: 600;
+    color: #575151;
+}
+
+.service-header span{
+    color: #16A085;
+}
+
+
+/* About Us Section  */
+
+.about-us{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-us .about-us-img{
+    flex: 1 1 45rem;
+}
+
+.about-us .about-us-img img{
+    width: 100%;
+}
+
+.about-us .about-us-content{
+    flex: 1 1 45rem;
+}
+
+.about-us .about-us-content h1{
+    font-size: 4.5rem;
+    color: #575151;
+    line-height: 1.8;
+    text-shadow: .3rem .2rem 0 rgba(0, 0, 0, .2);
+}
+
+.about-us .about-us-content p{
+    font-size: 1.5rem;
+    color: #252323;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
+
+.about-us-header{
+    text-align: center;
+    font-size: 5.4rem;
+    text-shadow: .3rem .2rem 0 rgba(0, 0, 0, .2);
+    font-weight: 600;
+    color: #575151;
+}
+
+.about-us-header span{
+    color: #16A085;
+}
+
+
+
+
+
 
 
 
@@ -184,7 +283,7 @@ header .navbar a:hover{
 
 @media (max-width:550px){
     html{
-        font-size: 50%;
+        font-size: 60%;
     }
 
     #menu-btn{
@@ -230,6 +329,51 @@ header .navbar a:hover{
         gap:2rem;
         
     }
+
+    .facilities .data{
+        text-align: center;
+        border: 2px solid #16A085;
+        margin: 0;
+        padding: 2.1rem 2rem;
+    }
+
+
+
+
+    .services .service{
+        text-align: left;
+        border: 2px solid #16A085;
+        margin-right: 20px;
+        padding: 2.2rem ;
+        border-radius: 4px;
+        box-shadow: .3rem .3rem 0 rgba(22, 160, 133, .2);
+        margin: 20px;
+    }
+    
+    
+    .services .service p{
+        font-size: 1.2rem;
+        color: #575151;
+    }
+    
+    .services .service i{
+        font-size: 3.5rem;
+        color: #16A085;
+    }
+    
+    .services .service h1{
+        font-size: 2rem;
+    }
+    
+    .services{
+        display: block;
+    }
+
+
+    .about-us{
+        display: block;
+    }
+
 
     
     
